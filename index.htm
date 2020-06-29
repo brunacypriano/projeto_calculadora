@@ -1,52 +1,64 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculadora Neumorfismo</title>
+</head>
+<body>
 
-<html>
-    <head>
+    <main id="principal" class="white__mode">
+        <div id="output-microfone">
+            <span id="microfone"></span>
+            <span class="tooltip">Operações reconhecidas: [somar, subtrair, dividir, multiplicar]; Calcular: [igual];<br>Exemplo: "Dois mais um. igual"</span>
+           
+        </div>
+        <div id="result">
+ 
+    <output type="number">0</output>
     
-    </head>
-    <body>
-        <div id="display"> </div>
-        <button id="soma">+</button>
-        <button id="numeroUm">1</button>
-        <button id="igual">=</button>
+</div>
+    <div class="keys">
+        
+        <button class="op__key" op="clear"  data-all-clear>C</button>
+        <button class="op__key" op="negate" data-negation>+/-</button>
+        <button class="op__key" op="percent" data-percent>%</button>
+        <button class="op__key" op="divide" data-operator>/</button>
+        <button class="esp__op__key" op="power">X<sup>y</sup></button>
+        <button class="esp__op__key" op="sin">sin</button>
+        <button class="num__key" data-number="7">7</button>
+        <button class="num__key" data-number="8">8</button>
+        <button class="num__key" data-number="9">9</button>
+        <button class="op__key" op="multiply" data-operator>&times;</button>
+        <button class="esp__op__key" op="power2">X<sup>2</sup></button>
+        <button class="esp__op__key" op="cos">cos</button>
+        <button class="num__key" data-number="4">4</button>
+        <button class="num__key" data-number="5">5</button>
+        <button class="num__key" data-number="6">6</button>
+        <button class="op__key" op="subtract" data-operator>-</button>
+        <button class="esp__op__key" op="power2">X<sup>3</sup></button>
+        <button class="esp__op__key" op="tan">tan</button>
+        <button class="num__key" data-number="1">1</button>
+        <button class="num__key" data-number="2">2</button>
+        <button class="num__key" data-number="3">3</button>
+        <button class="op__key" op="add" data-operator>+</button>
 
-        <script>
-            //objeto calculadora
-            let calculadora = {};
-            calculadora.display = document.querySelector("#display");
+        <button class="num__key">(</button>
+        <button class="num__key">)</button>
+        <button class="rand__key" op="Rand">Rand</button>
+        <button class="num__key" data-number="0">0</button>
+        <button class="num__key">.</button>
+        <button class="eq__key">=</button>
 
-            let botaoUm = document.querySelector("#numeroUm");
-            let botaoSoma = document.querySelector("#soma");
-            let botaoIgual = document.querySelector("#igual");
 
-            let acumulador = "";
-            
-            botaoUm.onclick = function() {
-                calculadora.display.innerText += 1;
-            }
 
-            botaoSoma.onclick = function() {
-                acumulador += calculadora.display.innerText;
-                acumulador += " + ";
-                calculadora.display.innerText = "";
-            }
+    </div>
 
-            botaoIgual.onclick = function() {
-                //TODO: checar se existe conteúdo dentro do display
+</main>
 
-                //colocando conteúdo do display no acumulador
-                acumulador += calculadora.display.innerText;
-                //resolvendo conta (conteúdo acumulador)
-                let resultado = eval(acumulador);
-                //colocando no display o conteúdo do acumulador
-                calculadora.display.innerText = resultado;
-                // limpando o acumulador
-                acumulador = "";
-
-            }
-
-        </script>
-
-    </body>
-
+<script src="voice.js"></script>
+<script src="identificaBotaoClicado.js"></script>
+<script src="operacoesEExibicoes.js"></script>
+</body>
 </html>
