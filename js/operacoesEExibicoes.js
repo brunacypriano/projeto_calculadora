@@ -1,4 +1,4 @@
-
+//Até a data de entrega foi implementado corretamente apenas o voice input. Ainda requer implementar as entradas via button para operações básicas e científicas.
 const opCallback = opName => () => {
     let currentVal = parseFloat($input.value);
 

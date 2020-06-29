@@ -1,3 +1,6 @@
+//Até a data de entrega foi implementado corretamente apenas o voice input. Ainda requer implementar as entradas via button para operações básicas e científicas.
+
+
 var microfone = document.getElementById('microfone');
 microfone.onclick = function () {
     var recognition = new (window.SpeechRecognition ||
