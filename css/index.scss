@@ -133,10 +133,11 @@ body {
   background-color: #dddddd;
   color:#636363;
   padding: 10px;
-  left: 470px;
+  display: flex;
+  align-items: top;
   border-radius: 5px;
-  transform: translateX(120px);
-
+  transform: translateX(-60px);
+  visibility: hidden;
 
 }
 .tooltip::before{
@@ -144,7 +145,7 @@ body {
   position: absolute;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent #dddddd transparent transparent;
+  border-color: transparent transparent transparent black ;
   left: 0;
   margin-left: -10px;
 }
@@ -157,7 +158,7 @@ body {
 }
 #output-microfone:hover .tooltip{
 
-visibility: hidden;
+visibility: visible;
 }
 #result{
   margin: 30px auto 30px;

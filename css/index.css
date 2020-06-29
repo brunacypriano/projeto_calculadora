@@ -166,10 +166,16 @@ body {
   background-color: #dddddd;
   color: #636363;
   padding: 10px;
-  left: 470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
   border-radius: 5px;
-  -webkit-transform: translateX(120px);
-          transform: translateX(120px);
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+  visibility: hidden;
 }
 
 .white__mode .tooltip::before {
@@ -177,7 +183,7 @@ body {
   position: absolute;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent #dddddd transparent transparent;
+  border-color: transparent transparent transparent black;
   left: 0;
   margin-left: -10px;
 }
@@ -196,7 +202,7 @@ body {
 }
 
 .white__mode #output-microfone:hover .tooltip {
-  visibility: hidden;
+  visibility: visible;
 }
 
 .white__mode #result {
