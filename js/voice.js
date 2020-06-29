@@ -3,6 +3,8 @@
 
 var microfone = document.getElementById('microfone');
 microfone.onclick = function () {
+    microfone.classList.add("record");
+
     var recognition = new (window.SpeechRecognition ||
     window.webkitSpeechRecognition || window.mozSpeechRecognition
     || window.mcSpeechRecognition) ();
@@ -16,6 +18,7 @@ microfone.onclick = function () {
     setTimeout(function(){
     validacao(input);
     },1000);
+    microfone.classList.remove("record");
     }
 }
 function validacao(input){

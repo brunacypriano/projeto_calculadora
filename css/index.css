@@ -107,8 +107,8 @@ body {
 }
 
 .white__mode #microfone {
-  width: 35px;
-  height: 35px;
+  width: 60px;
+  height: 60px;
   margin-bottom: 20px;
   background-image: url(mic.png);
   background-size: 100% 100%;
@@ -166,16 +166,10 @@ body {
   background-color: #dddddd;
   color: #636363;
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: top;
-      -ms-flex-align: top;
-          align-items: top;
+  left: 470px;
   border-radius: 5px;
-  -webkit-transform: translateX(45px);
-          transform: translateX(45px);
-  visibility: hidden;
+  -webkit-transform: translateX(120px);
+          transform: translateX(120px);
 }
 
 .white__mode .tooltip::before {
@@ -196,10 +190,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .white__mode #output-microfone:hover .tooltip {
-  visibility: visible;
+  visibility: hidden;
 }
 
 .white__mode #result {

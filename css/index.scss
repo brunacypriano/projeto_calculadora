@@ -98,14 +98,13 @@ body {
       color: #e1e1e1;
     }
 #microfone{
-  width: 35px;
-  height: 35px;
+  width: 60px;
+  height: 60px;
   margin-bottom: 20px;
   background-image: url(mic.png);
   background-size: 100% 100%;
   border-radius: 50%;
   padding: 5px;
-  
 
 }
 
@@ -134,11 +133,10 @@ body {
   background-color: #dddddd;
   color:#636363;
   padding: 10px;
-  display: flex;
-  align-items: top;
+  left: 470px;
   border-radius: 5px;
-  transform: translateX(45px);
-  visibility: hidden;
+  transform: translateX(120px);
+
 
 }
 .tooltip::before{
@@ -154,11 +152,12 @@ body {
 #output-microfone{
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 
 }
 #output-microfone:hover .tooltip{
 
-visibility: visible;
+visibility: hidden;
 }
 #result{
   margin: 30px auto 30px;
