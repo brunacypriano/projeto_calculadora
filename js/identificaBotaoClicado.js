@@ -3,7 +3,7 @@
 const $input = document.querySelector("input");
 
 document.querySelectorAll(".num__key").forEach(
-  elemento => {
-    elemento.onclick = () => $input.value = $input.value !== "0" ? $input.value + elemento.innerText : elemento.innerText;
+  el => {
+    el.onclick = () => $input.value = $input.value !== "0" ? $input.value + el.innerText : el.innerText;
   }
 );

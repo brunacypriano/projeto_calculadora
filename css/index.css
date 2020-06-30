@@ -23,30 +23,30 @@ body {
           justify-content: center;
 }
 
-.white__mode {
+main {
   -webkit-box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.4);
           box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.4);
   padding: 2rem;
   border-radius: 30px;
 }
 
-.white__mode input, .white__mode output, .white__mode button {
+main input, main output, main button {
   outline: none;
 }
 
-.white__mode input::-webkit-outer-spin-button,
-.white__mode input::-webkit-inner-spin-button {
+main input::-webkit-outer-spin-button,
+main input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.white__mode input[type=number] {
+main input[type=number] {
   -moz-appearance: textfield;
 }
 
-.white__mode output {
+main input, main output {
   -webkit-box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(0, 0, 0, 0.4);
           box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(0, 0, 0, 0.4);
-  width: 442px;
+  width: 320px;
   height: 60px;
   padding: 16px 32px;
   text-align: right;
@@ -55,16 +55,16 @@ body {
   text-shadow: -1px -1px 2px #fff, 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
-.white__mode .keys {
+main .keys {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   grid-gap: 0.8rem;
   margin-top: 20px;
 }
 
-.white__mode button {
+main button {
   -webkit-box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.4);
           box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.4);
   width: 60px;
@@ -72,28 +72,27 @@ body {
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  background: #e9e9e9;
+  background: e9e9e9;
 }
 
-.white__mode button:hover, .white__mode button:active {
-  background-color: #ccc;
+main button:hover, main button:active {
+  background: #ccc;
 }
 
-.white__mode button:active {
+main button:active {
   -webkit-box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(0, 0, 0, 0.4);
           box-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(0, 0, 0, 0.4);
 }
 
-.white__mode .op__key,
-.white__mode .eq__key {
+main .op__key {
   color: #ff652f;
 }
 
-.white__mode .esp__op__key {
-  color: gray;
+main .eq__key {
+  color: #ff652f;
 }
 
-.white__mode #history {
+main #history {
   font-family: sans-serif;
   text-shadow: none;
   margin-top: 20px;
@@ -101,12 +100,7 @@ body {
   color: aquamarine;
 }
 
-.white__mode .rand__key {
-  background: #ff652f;
-  color: #e1e1e1;
-}
-
-.white__mode #microfone {
+main #microfone {
   width: 60px;
   height: 60px;
   margin-bottom: 20px;
@@ -116,7 +110,7 @@ body {
   padding: 5px;
 }
 
-.white__mode .record {
+main .record {
   -webkit-animation: microphone-animation 1.5s infinite;
           animation: microphone-animation 1.5s infinite;
 }
@@ -159,7 +153,7 @@ body {
   }
 }
 
-.white__mode .tooltip {
+main .tooltip {
   width: 200px;
   font-size: 9px;
   position: absolute;
@@ -178,7 +172,7 @@ body {
   visibility: hidden;
 }
 
-.white__mode .tooltip::before {
+main .tooltip::before {
   content: '';
   position: absolute;
   border-width: 5px;
@@ -188,7 +182,7 @@ body {
   margin-left: -10px;
 }
 
-.white__mode #output-microfone {
+main #output-microfone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,13 +195,11 @@ body {
           align-items: flex-end;
 }
 
-.white__mode #output-microfone:hover .tooltip {
+main #output-microfone:hover .tooltip {
   visibility: visible;
 }
 
-.white__mode #result {
+main #result {
   margin: 30px auto 30px;
 }
-
-/*NIGHT MODE*/
 /*# sourceMappingURL=index.css.map */

@@ -12,7 +12,7 @@ microfone.onclick = function () {
     recognition.start();
     recognition.onresult = function(event){
             var input = event.results[0][0].transcript;
-    document.querySelector("output").innerText = input;
+    document.querySelector("#resultado").innerText = input;
 
 
     setTimeout(function(){
@@ -25,12 +25,12 @@ function validacao(input){
     try{
         var result = eval(input);
         
-        document.querySelector("output").innerText = result;
+        document.querySelector("#resultado").innerText = result;
         
   
     }catch(e){
         console.log(e);
-        document.querySelector("output").innerText = "";
+        document.querySelector("#resultado").innerText = "";
     }
 
 }

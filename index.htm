@@ -8,58 +8,47 @@
 </head>
 <body>
 
-    <main id="principal" class="white__mode">
-        <div id="output-microfone">
+    <main>
+
+        
+        <!--div id="output-microfone">
             <img src="mic.png" alt="" id="microfone">
             <span class="tooltip">ENTRADA DE VOZ:<br>Operações reconhecidas: [somar, subtrair, dividir, multiplicar]; Calcular: [igual];<br><br>Exemplo: "Dois mais um."<br>Aguarde 1s para a exibição do resultado</span>
            
         </div>
         <div id="result">
- 
-    <output type="number">0</output>
     
-</div>
-    <div class="keys">
-        
-        <button class="op__key" op="clear"  data-all-clear>C</button>
-        <button class="op__key" op="negate" data-negation>+/-</button>
-        <button class="op__key" op="percent" data-percent>%</button>
-        <button class="op__key" op="divide" data-operator>/</button>
-        <button class="esp__op__key" op="power">X<sup>y</sup></button>
-        <button class="esp__op__key" op="sin">sin</button>
-        <button class="num__key" data-number="7">7</button>
-        <button class="num__key" data-number="8">8</button>
-        <button class="num__key" data-number="9">9</button>
-        <button class="op__key" op="multiply" data-operator>&times;</button>
-        <button class="esp__op__key" op="power2">X<sup>2</sup></button>
-        <button class="esp__op__key" op="cos">cos</button>
-        <button class="num__key" data-number="4">4</button>
-        <button class="num__key" data-number="5">5</button>
-        <button class="num__key" data-number="6">6</button>
-        <button class="op__key" op="subtract" data-operator>-</button>
-        <button class="esp__op__key" op="power2">X<sup>3</sup></button>
-        <button class="esp__op__key" op="tan">tan</button>
-        <button class="num__key" data-number="1">1</button>
-        <button class="num__key" data-number="2">2</button>
-        <button class="num__key" data-number="3">3</button>
-        <button class="op__key" op="add" data-operator>+</button>
-
-        <button class="par__key">(</button>
-        <button class="par__key">)</button>
-        <button class="rand__key" op="Rand">Rand</button>
-        <button class="num__key" data-number="0">0</button>
-        <button class="num__key">.</button>
-        <button class="eq__key">=</button>
-
-
-
-    </div>
-
-</main>
+    <output type="text" for="resultado"></output>
+        </div-->
+        <input id="resultado" name="resultado"type="number" value="0">
+        <div class='keys'>
+          <button class='op__key' op='clear'>C</button>
+          <button class='op__key' op='negate'>+/-</button>
+          <button class='op__key' op='percent'>%</button>
+          <button class='op__key' op='divide'>/</button>
+          <button class='num__key'>7</button>
+          <button class='num__key'>8</button>
+          <button class='num__key'>9</button>
+          <button class='op__key' op='multiply'>x</button>
+          <button class='num__key'>4</button>
+          <button class='num__key'>5</button>
+          <button class='num__key'>6</button>
+          <button class='op__key' op='subtract'>-</button>
+          <button class='num__key'>1</button>
+          <button class='num__key'>2</button>
+          <button class='num__key'>3</button>
+          <button class='op__key' op='add'>+</button>
+          <span></span>
+          <button class='num__key'>0</button>
+          <button class='num__key'>.</button>
+          <button class='eq__key'>=</button>
+        </div>
+      </main>
+      
 
 <script src="js/voice.js"></script>
 <script src="js/identificaBotaoClicado.js"></script>
 <script src="js/operacoesEExibicoes.js"></script>
-<script src="js/dinamicaDisplay.js"></script>
+
 </body>
 </html>
